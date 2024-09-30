@@ -35,10 +35,50 @@ namespace Calculator_Programs
             {
                 Num_Label.Text = one.Text;
                 Label_overwrite = false;
+
             }
             else
             {
                 Num_Label.Text += one.Text;
+            }
+        }
+        private void two_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = two.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += two.Text;
+            }
+        }
+        private void three_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = three.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += three.Text;
+            }
+        }
+        private void four_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = four.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += four.Text;
             }
         }
     }

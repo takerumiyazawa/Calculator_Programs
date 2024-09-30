@@ -53,11 +53,13 @@
             // 
             // mark
             // 
+            this.mark.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.mark.Location = new System.Drawing.Point(28, 32);
             this.mark.Name = "mark";
             this.mark.Size = new System.Drawing.Size(174, 93);
             this.mark.TabIndex = 0;
             this.mark.Text = "=";
+            this.mark.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Num_Label
             // 
@@ -66,7 +68,7 @@
             this.Num_Label.Name = "Num_Label";
             this.Num_Label.Size = new System.Drawing.Size(277, 93);
             this.Num_Label.TabIndex = 1;
-            this.Num_Label.Text = "0";
+            this.Num_Label.Text = "87";
             this.Num_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // seven
@@ -113,6 +115,7 @@
             this.four.TabIndex = 6;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
+            this.four.Click += new System.EventHandler(this.four_Click);
             // 
             // five
             // 
@@ -149,6 +152,7 @@
             this.one.TabIndex = 10;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
+            this.one.Click += new System.EventHandler(this.one_Click);
             // 
             // two
             // 
@@ -158,6 +162,7 @@
             this.two.TabIndex = 11;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.two_Click);
             // 
             // three
             // 
@@ -167,6 +172,7 @@
             this.three.TabIndex = 12;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
+            this.three.Click += new System.EventHandler(this.three_Click);
             // 
             // plus
             // 
