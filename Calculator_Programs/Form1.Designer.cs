@@ -109,6 +109,7 @@
             this.multiplied.TabIndex = 5;
             this.multiplied.Text = "×";
             this.multiplied.UseVisualStyleBackColor = true;
+            this.multiplied.Click += new System.EventHandler(this.multiplied_Click);
             // 
             // four
             // 
@@ -148,6 +149,7 @@
             this.minus.TabIndex = 9;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // one
             // 
@@ -187,6 +189,7 @@
             this.plus.TabIndex = 13;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // zero
             // 
@@ -215,6 +218,7 @@
             this.equal.TabIndex = 16;
             this.equal.Text = "=";
             this.equal.UseVisualStyleBackColor = true;
+            this.equal.Click += new System.EventHandler(this.equal_Click);
             // 
             // devided
             // 
@@ -224,6 +228,7 @@
             this.devided.TabIndex = 17;
             this.devided.Text = "÷";
             this.devided.UseVisualStyleBackColor = true;
+            this.devided.Click += new System.EventHandler(this.divided_Click);
             // 
             // percent
             // 
@@ -233,6 +238,7 @@
             this.percent.TabIndex = 18;
             this.percent.Text = "%";
             this.percent.UseVisualStyleBackColor = true;
+            this.percent.Click += new System.EventHandler(this.percent_Click);
             // 
             // sign
             // 
