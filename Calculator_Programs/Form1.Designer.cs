@@ -185,6 +185,7 @@
             this.zero.TabIndex = 14;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
+            this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
             // dot
             // 

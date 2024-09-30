@@ -16,5 +16,30 @@ namespace Calculator_Programs
         {
             InitializeComponent();
         }
+
+        public bool Label_overwrite = true;
+        private void zero_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = zero.Text;
+            }
+            else
+            {
+                Num_Label.Text += zero.Text;
+            }
+        }
+        private void one_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = one.Text;
+                Label_overwrite = false;
+            }
+            else
+            {
+                Num_Label.Text += one.Text;
+            }
+        }
     }
 }
