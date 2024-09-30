@@ -12,6 +12,19 @@ namespace Calculator_Programs
 {
     public partial class Form1 : Form
     {
+        private double dNum; 
+        private double dNum_Pool; 
+        private enum MarksType 
+        {
+            NON,
+            PLUS,
+            MINUS,
+            MULTIPLIED,
+            DEVIDED,
+            PERCENT
+        }
+        private MarksType mType = MarksType.NON;
+
         public Form1()
         {
             InitializeComponent();
@@ -146,5 +159,79 @@ namespace Calculator_Programs
                 Num_Label.Text += nine.Text;
             }
         }
+
+        private bool Num_Dot = false; // .ドット の有無判定
+
+private void plus_Click(object sender, EventArgs e)// +ボタン
+{
+　　Num_Dot = false;
+　　Label_overwrite = true;
+　　Num_PoolMethod();
+　　mType = MarksType.PLUS;
+}
+private void minus_Click(object sender, EventArgs e)// -ボタン
+{
+　　Num_Dot = false;
+　　Label_overwrite = true;
+　　Num_PoolMethod();
+　　mType = MarksType.MINUS;
+}
+private void multiplied_Click(object sender, EventArgs e)// ×ボタン
+{
+　　Num_Dot = false;
+　　Label_overwrite = true;
+　　Num_PoolMethod();
+　　mType = MarksType.MULTIPLIED;
+}
+private void divided_Click(object sender, EventArgs e)// ÷ボタン
+{
+　　Num_Dot = false;
+　　Label_overwrite = true;
+　　Num_PoolMethod();
+　　mType = MarksType.DEVIDED;
+}
+private void percent_Click(object sender, EventArgs e)// %ボタン
+{
+　　Num_Dot = false;
+　　Label_overwrite = true;
+　　mType = MarksType.PERCENT;
+　　Num_PoolMethod();
+　　mType = MarksType.NON;
+}
+private void equal_Click(object sender, EventArgs e)// =ボタン
+{
+　　Num_PoolMethod();
+　　mType = MarksType.NON;
+　　Num_Dot = false;
+　　Label_overwrite = true;
+}
+
+        private void Num_PoolMethod()
+        {
+            dNum = double.Parse(Num_Label.Text);
+            switch (mType)
+            {
+                case MarksType.NON:
+                    dNum_Pool = dNum;
+                    break;
+                case MarksType.PLUS:
+                    dNum_Pool += dNum;
+                    break;
+                case MarksType.MINUS:
+                    dNum_Pool -= dNum;
+                    break;
+                case MarksType.MULTIPLIED:
+                    dNum_Pool *= dNum;
+                    break;
+                case MarksType.DEVIDED:
+                    dNum_Pool /= dNum;
+                    break;
+                case MarksType.PERCENT:
+                    dNum_Pool = dNum * 0.01;
+                    break;
+            }
+            Num_Label.Text = dNum_Pool.ToString();
+        }
+
     }
 }
