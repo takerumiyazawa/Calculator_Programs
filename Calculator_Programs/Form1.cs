@@ -81,5 +81,70 @@ namespace Calculator_Programs
                 Num_Label.Text += four.Text;
             }
         }
+        private void five_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = five.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += five.Text;
+            }
+        }
+        private void six_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = six.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += six.Text;
+            }
+        }
+        private void seven_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = seven.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += seven.Text;
+            }
+        }
+        private void eight_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = eight.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += eight.Text;
+            }
+        }
+        private void nine_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = nine.Text;
+                Label_overwrite = false;
+
+            }
+            else
+            {
+                Num_Label.Text += nine.Text;
+            }
+        }
     }
 }

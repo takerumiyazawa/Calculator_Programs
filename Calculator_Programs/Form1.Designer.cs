@@ -68,7 +68,7 @@
             this.Num_Label.Name = "Num_Label";
             this.Num_Label.Size = new System.Drawing.Size(277, 93);
             this.Num_Label.TabIndex = 1;
-            this.Num_Label.Text = "87";
+            this.Num_Label.Text = "0";
             this.Num_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // seven
@@ -79,6 +79,7 @@
             this.seven.TabIndex = 2;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
+            this.seven.Click += new System.EventHandler(this.seven_Click);
             // 
             // eight
             // 
@@ -88,6 +89,7 @@
             this.eight.TabIndex = 3;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
+            this.eight.Click += new System.EventHandler(this.eight_Click);
             // 
             // nine
             // 
@@ -97,6 +99,7 @@
             this.nine.TabIndex = 4;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
+            this.nine.Click += new System.EventHandler(this.nine_Click);
             // 
             // multiplied
             // 
@@ -125,6 +128,7 @@
             this.five.TabIndex = 7;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
+            this.five.Click += new System.EventHandler(this.five_Click);
             // 
             // six
             // 
@@ -134,6 +138,7 @@
             this.six.TabIndex = 8;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
+            this.six.Click += new System.EventHandler(this.six_Click);
             // 
             // minus
             // 
