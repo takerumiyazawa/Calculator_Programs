@@ -206,6 +206,35 @@ private void equal_Click(object sender, EventArgs e)// =ボタン
 　　Label_overwrite = true;
 }
 
+private void all_clear_Click(object sender, EventArgs e)//AC(AllClear)ボタン
+{
+    Num_Label.Text = "0";
+    Label_overwrite = true;
+    Num_Dot = false;
+}
+
+private void dot_Click(object sender, EventArgs e)// .ドットボタン
+{
+　　if (Num_Dot == false)
+　　{
+　　　　Num_Label.Text = Num_Label.Text + ".";
+　　　　Num_Dot = true;
+　　　　Label_overwrite = false;
+　　}
+}
+
+private void sign_Click(object sender, EventArgs e)// .ドットボタン
+{
+　　if (Num_Label.Text.Contains("-"))
+　　{
+　　　　Num_Label.Text = Num_Label.Text.Replace("-", "");
+　　}
+　　else
+　　{
+　　　　Num_Label.Text = "-" + Num_Label.Text;
+　　}
+}
+
         private void Num_PoolMethod()
         {
             dNum = double.Parse(Num_Label.Text);

@@ -209,6 +209,7 @@
             this.dot.TabIndex = 15;
             this.dot.Text = ".";
             this.dot.UseVisualStyleBackColor = true;
+            this.dot.Click += new System.EventHandler(this.dot_Click);
             // 
             // equal
             // 
@@ -248,6 +249,7 @@
             this.sign.TabIndex = 19;
             this.sign.Text = "+/-";
             this.sign.UseVisualStyleBackColor = true;
+            this.sign.Click += new System.EventHandler(this.sign_Click);
             // 
             // all_clear
             // 
@@ -257,6 +259,7 @@
             this.all_clear.TabIndex = 20;
             this.all_clear.Text = "AC";
             this.all_clear.UseVisualStyleBackColor = true;
+            this.all_clear.Click += new System.EventHandler(this.all_clear_Click);
             // 
             // Form1
             // 
