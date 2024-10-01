@@ -160,37 +160,37 @@ namespace Calculator_Programs
             }
         }
 
-        private bool Num_Dot = false; // .ドット の有無判定
+        private bool Num_Dot = false; 
 
-private void plus_Click(object sender, EventArgs e)// +ボタン
+private void plus_Click(object sender, EventArgs e)
 {
 　　Num_Dot = false;
 　　Label_overwrite = true;
 　　Num_PoolMethod();
 　　mType = MarksType.PLUS;
 }
-private void minus_Click(object sender, EventArgs e)// -ボタン
+private void minus_Click(object sender, EventArgs e)
 {
 　　Num_Dot = false;
 　　Label_overwrite = true;
 　　Num_PoolMethod();
 　　mType = MarksType.MINUS;
 }
-private void multiplied_Click(object sender, EventArgs e)// ×ボタン
+private void multiplied_Click(object sender, EventArgs e)
 {
 　　Num_Dot = false;
 　　Label_overwrite = true;
 　　Num_PoolMethod();
 　　mType = MarksType.MULTIPLIED;
 }
-private void divided_Click(object sender, EventArgs e)// ÷ボタン
+private void divided_Click(object sender, EventArgs e)
 {
 　　Num_Dot = false;
 　　Label_overwrite = true;
 　　Num_PoolMethod();
 　　mType = MarksType.DEVIDED;
 }
-private void percent_Click(object sender, EventArgs e)// %ボタン
+private void percent_Click(object sender, EventArgs e)
 {
 　　Num_Dot = false;
 　　Label_overwrite = true;
@@ -198,7 +198,7 @@ private void percent_Click(object sender, EventArgs e)// %ボタン
 　　Num_PoolMethod();
 　　mType = MarksType.NON;
 }
-private void equal_Click(object sender, EventArgs e)// =ボタン
+private void equal_Click(object sender, EventArgs e)
 {
 　　Num_PoolMethod();
 　　mType = MarksType.NON;
@@ -206,14 +206,14 @@ private void equal_Click(object sender, EventArgs e)// =ボタン
 　　Label_overwrite = true;
 }
 
-private void all_clear_Click(object sender, EventArgs e)//AC(AllClear)ボタン
+private void all_clear_Click(object sender, EventArgs e)
 {
     Num_Label.Text = "0";
     Label_overwrite = true;
     Num_Dot = false;
 }
 
-private void dot_Click(object sender, EventArgs e)// .ドットボタン
+private void dot_Click(object sender, EventArgs e)
 {
 　　if (Num_Dot == false)
 　　{
@@ -223,7 +223,7 @@ private void dot_Click(object sender, EventArgs e)// .ドットボタン
 　　}
 }
 
-private void sign_Click(object sender, EventArgs e)// .ドットボタン
+private void sign_Click(object sender, EventArgs e)
 {
 　　if (Num_Label.Text.Contains("-"))
 　　{
@@ -233,6 +233,12 @@ private void sign_Click(object sender, EventArgs e)// .ドットボタン
 　　{
 　　　　Num_Label.Text = "-" + Num_Label.Text;
 　　}
+}
+
+private void clear_Click(object sender, EventArgs e)
+{
+    Num_Label.Text = "0";
+    Num_Dot = false;
 }
 
         private void Num_PoolMethod()

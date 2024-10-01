@@ -49,6 +49,10 @@
             this.percent = new System.Windows.Forms.Button();
             this.sign = new System.Windows.Forms.Button();
             this.all_clear = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.back_space = new System.Windows.Forms.Button();
+            this.tax_exclusive = new System.Windows.Forms.Button();
+            this.tax_inclusive = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mark
@@ -73,7 +77,7 @@
             // 
             // seven
             // 
-            this.seven.Location = new System.Drawing.Point(28, 268);
+            this.seven.Location = new System.Drawing.Point(27, 360);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(97, 95);
             this.seven.TabIndex = 2;
@@ -83,7 +87,7 @@
             // 
             // eight
             // 
-            this.eight.Location = new System.Drawing.Point(151, 268);
+            this.eight.Location = new System.Drawing.Point(150, 360);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(97, 95);
             this.eight.TabIndex = 3;
@@ -93,7 +97,7 @@
             // 
             // nine
             // 
-            this.nine.Location = new System.Drawing.Point(277, 268);
+            this.nine.Location = new System.Drawing.Point(276, 360);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(97, 95);
             this.nine.TabIndex = 4;
@@ -103,7 +107,7 @@
             // 
             // multiplied
             // 
-            this.multiplied.Location = new System.Drawing.Point(403, 268);
+            this.multiplied.Location = new System.Drawing.Point(402, 360);
             this.multiplied.Name = "multiplied";
             this.multiplied.Size = new System.Drawing.Size(97, 95);
             this.multiplied.TabIndex = 5;
@@ -113,7 +117,7 @@
             // 
             // four
             // 
-            this.four.Location = new System.Drawing.Point(27, 380);
+            this.four.Location = new System.Drawing.Point(26, 472);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(97, 95);
             this.four.TabIndex = 6;
@@ -123,7 +127,7 @@
             // 
             // five
             // 
-            this.five.Location = new System.Drawing.Point(150, 380);
+            this.five.Location = new System.Drawing.Point(149, 472);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(97, 95);
             this.five.TabIndex = 7;
@@ -133,7 +137,7 @@
             // 
             // six
             // 
-            this.six.Location = new System.Drawing.Point(276, 380);
+            this.six.Location = new System.Drawing.Point(275, 472);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(97, 95);
             this.six.TabIndex = 8;
@@ -143,7 +147,7 @@
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(403, 380);
+            this.minus.Location = new System.Drawing.Point(402, 472);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(97, 95);
             this.minus.TabIndex = 9;
@@ -153,7 +157,7 @@
             // 
             // one
             // 
-            this.one.Location = new System.Drawing.Point(30, 494);
+            this.one.Location = new System.Drawing.Point(26, 586);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(97, 95);
             this.one.TabIndex = 10;
@@ -163,7 +167,7 @@
             // 
             // two
             // 
-            this.two.Location = new System.Drawing.Point(153, 494);
+            this.two.Location = new System.Drawing.Point(149, 586);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(97, 95);
             this.two.TabIndex = 11;
@@ -173,7 +177,7 @@
             // 
             // three
             // 
-            this.three.Location = new System.Drawing.Point(279, 494);
+            this.three.Location = new System.Drawing.Point(275, 586);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(97, 95);
             this.three.TabIndex = 12;
@@ -183,7 +187,7 @@
             // 
             // plus
             // 
-            this.plus.Location = new System.Drawing.Point(406, 494);
+            this.plus.Location = new System.Drawing.Point(402, 586);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(97, 95);
             this.plus.TabIndex = 13;
@@ -193,7 +197,7 @@
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(30, 607);
+            this.zero.Location = new System.Drawing.Point(29, 699);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(220, 95);
             this.zero.TabIndex = 14;
@@ -203,7 +207,7 @@
             // 
             // dot
             // 
-            this.dot.Location = new System.Drawing.Point(279, 607);
+            this.dot.Location = new System.Drawing.Point(278, 699);
             this.dot.Name = "dot";
             this.dot.Size = new System.Drawing.Size(97, 95);
             this.dot.TabIndex = 15;
@@ -213,7 +217,7 @@
             // 
             // equal
             // 
-            this.equal.Location = new System.Drawing.Point(406, 607);
+            this.equal.Location = new System.Drawing.Point(405, 699);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(97, 95);
             this.equal.TabIndex = 16;
@@ -223,7 +227,7 @@
             // 
             // devided
             // 
-            this.devided.Location = new System.Drawing.Point(403, 157);
+            this.devided.Location = new System.Drawing.Point(402, 249);
             this.devided.Name = "devided";
             this.devided.Size = new System.Drawing.Size(97, 95);
             this.devided.TabIndex = 17;
@@ -233,7 +237,7 @@
             // 
             // percent
             // 
-            this.percent.Location = new System.Drawing.Point(277, 157);
+            this.percent.Location = new System.Drawing.Point(276, 249);
             this.percent.Name = "percent";
             this.percent.Size = new System.Drawing.Size(97, 95);
             this.percent.TabIndex = 18;
@@ -243,7 +247,7 @@
             // 
             // sign
             // 
-            this.sign.Location = new System.Drawing.Point(151, 157);
+            this.sign.Location = new System.Drawing.Point(150, 249);
             this.sign.Name = "sign";
             this.sign.Size = new System.Drawing.Size(97, 95);
             this.sign.TabIndex = 19;
@@ -253,7 +257,7 @@
             // 
             // all_clear
             // 
-            this.all_clear.Location = new System.Drawing.Point(28, 157);
+            this.all_clear.Location = new System.Drawing.Point(27, 138);
             this.all_clear.Name = "all_clear";
             this.all_clear.Size = new System.Drawing.Size(97, 95);
             this.all_clear.TabIndex = 20;
@@ -261,11 +265,52 @@
             this.all_clear.UseVisualStyleBackColor = true;
             this.all_clear.Click += new System.EventHandler(this.all_clear_Click);
             // 
+            // clear
+            // 
+            this.clear.Location = new System.Drawing.Point(29, 249);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(97, 95);
+            this.clear.TabIndex = 22;
+            this.clear.Text = "C";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
+            // back_space
+            // 
+            this.back_space.Location = new System.Drawing.Point(152, 138);
+            this.back_space.Name = "back_space";
+            this.back_space.Size = new System.Drawing.Size(97, 95);
+            this.back_space.TabIndex = 23;
+            this.back_space.Text = "→";
+            this.back_space.UseVisualStyleBackColor = true;
+            // 
+            // tax_exclusive
+            // 
+            this.tax_exclusive.Location = new System.Drawing.Point(275, 138);
+            this.tax_exclusive.Name = "tax_exclusive";
+            this.tax_exclusive.Size = new System.Drawing.Size(97, 95);
+            this.tax_exclusive.TabIndex = 24;
+            this.tax_exclusive.Text = "税抜";
+            this.tax_exclusive.UseVisualStyleBackColor = true;
+            // 
+            // tax_inclusive
+            // 
+            this.tax_inclusive.Location = new System.Drawing.Point(402, 138);
+            this.tax_inclusive.Name = "tax_inclusive";
+            this.tax_inclusive.Size = new System.Drawing.Size(97, 95);
+            this.tax_inclusive.TabIndex = 25;
+            this.tax_inclusive.Text = "税込";
+            this.tax_inclusive.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 744);
+            this.ClientSize = new System.Drawing.Size(528, 815);
+            this.Controls.Add(this.tax_inclusive);
+            this.Controls.Add(this.tax_exclusive);
+            this.Controls.Add(this.back_space);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.all_clear);
             this.Controls.Add(this.sign);
             this.Controls.Add(this.percent);
@@ -316,6 +361,10 @@
         private System.Windows.Forms.Button percent;
         private System.Windows.Forms.Button sign;
         private System.Windows.Forms.Button all_clear;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button back_space;
+        private System.Windows.Forms.Button tax_exclusive;
+        private System.Windows.Forms.Button tax_inclusive;
     }
 }
 
