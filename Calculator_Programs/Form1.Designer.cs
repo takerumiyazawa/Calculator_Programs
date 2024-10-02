@@ -50,9 +50,9 @@
             this.sign = new System.Windows.Forms.Button();
             this.all_clear = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
-            this.back_space = new System.Windows.Forms.Button();
-            this.tax_exclusive = new System.Windows.Forms.Button();
-            this.tax_inclusive = new System.Windows.Forms.Button();
+            this.backspace = new System.Windows.Forms.Button();
+            this.exclusive = new System.Windows.Forms.Button();
+            this.inclusive = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mark
@@ -275,41 +275,43 @@
             this.clear.UseVisualStyleBackColor = true;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // back_space
+            // backspace
             // 
-            this.back_space.Location = new System.Drawing.Point(152, 138);
-            this.back_space.Name = "back_space";
-            this.back_space.Size = new System.Drawing.Size(97, 95);
-            this.back_space.TabIndex = 23;
-            this.back_space.Text = "→";
-            this.back_space.UseVisualStyleBackColor = true;
+            this.backspace.Location = new System.Drawing.Point(152, 138);
+            this.backspace.Name = "backspace";
+            this.backspace.Size = new System.Drawing.Size(97, 95);
+            this.backspace.TabIndex = 23;
+            this.backspace.Text = "→";
+            this.backspace.UseVisualStyleBackColor = true;
             // 
-            // tax_exclusive
+            // exclusive
             // 
-            this.tax_exclusive.Location = new System.Drawing.Point(275, 138);
-            this.tax_exclusive.Name = "tax_exclusive";
-            this.tax_exclusive.Size = new System.Drawing.Size(97, 95);
-            this.tax_exclusive.TabIndex = 24;
-            this.tax_exclusive.Text = "税抜";
-            this.tax_exclusive.UseVisualStyleBackColor = true;
+            this.exclusive.Location = new System.Drawing.Point(275, 138);
+            this.exclusive.Name = "exclusive";
+            this.exclusive.Size = new System.Drawing.Size(97, 95);
+            this.exclusive.TabIndex = 24;
+            this.exclusive.Text = "税抜";
+            this.exclusive.UseVisualStyleBackColor = true;
+            this.exclusive.Click += new System.EventHandler(this.exclusive_Click);
             // 
-            // tax_inclusive
+            // inclusive
             // 
-            this.tax_inclusive.Location = new System.Drawing.Point(402, 138);
-            this.tax_inclusive.Name = "tax_inclusive";
-            this.tax_inclusive.Size = new System.Drawing.Size(97, 95);
-            this.tax_inclusive.TabIndex = 25;
-            this.tax_inclusive.Text = "税込";
-            this.tax_inclusive.UseVisualStyleBackColor = true;
+            this.inclusive.Location = new System.Drawing.Point(402, 138);
+            this.inclusive.Name = "inclusive";
+            this.inclusive.Size = new System.Drawing.Size(97, 95);
+            this.inclusive.TabIndex = 25;
+            this.inclusive.Text = "税込";
+            this.inclusive.UseVisualStyleBackColor = true;
+            this.inclusive.Click += new System.EventHandler(this.inclusive_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 815);
-            this.Controls.Add(this.tax_inclusive);
-            this.Controls.Add(this.tax_exclusive);
-            this.Controls.Add(this.back_space);
+            this.Controls.Add(this.inclusive);
+            this.Controls.Add(this.exclusive);
+            this.Controls.Add(this.backspace);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.all_clear);
             this.Controls.Add(this.sign);
@@ -362,9 +364,9 @@
         private System.Windows.Forms.Button sign;
         private System.Windows.Forms.Button all_clear;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Button back_space;
-        private System.Windows.Forms.Button tax_exclusive;
-        private System.Windows.Forms.Button tax_inclusive;
+        private System.Windows.Forms.Button backspace;
+        private System.Windows.Forms.Button exclusive;
+        private System.Windows.Forms.Button inclusive;
     }
 }
 
