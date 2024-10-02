@@ -45,6 +45,7 @@ namespace Calculator_Programs
                 Num_Label.Text += zero.Text;
             }
         }
+
         private void one_Click(object sender, EventArgs e)
         {
             if (Label_overwrite == true || All_overwrite == true)
@@ -262,6 +263,21 @@ private void clear_Click(object sender, EventArgs e)
     Num_Label.Text = "0";
     Num_Dot = false;
     Label_overwrite = true;
+}
+
+
+private void backspace_Click(object sender, EventArgs e)
+{
+    if (Num_Label.Text.Length == 1)
+    {
+        Num_Label.Text = "0";
+        Num_Dot = false;
+        Label_overwrite = true;
+    }
+    else 
+    {
+        Num_Label.Text = Num_Label.Text.Substring(0, Num_Label.Text.Length -1);
+    }
 }
 
         private void Num_PoolMethod()

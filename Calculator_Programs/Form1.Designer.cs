@@ -283,6 +283,7 @@
             this.backspace.TabIndex = 23;
             this.backspace.Text = "→";
             this.backspace.UseVisualStyleBackColor = true;
+            this.backspace.Click += new System.EventHandler(this.backspace_Click);
             // 
             // exclusive
             // 
